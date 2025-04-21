@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    width: clamp(17.0625rem, 4.5625rem + 62.5vw, 60.8125rem);
+}
+
+.year {
+    font-family: PT Sans;
+    font-weight: 700;
+    font-size: clamp(3.5rem, 0.9286rem + 12.8571vw, 12.5rem);
+    line-height: 160px;
+    letter-spacing: -2%;
+    text-align: center;
+}
+
+.firstYear {
+    color: #3877ee;
+}
+
+.secondYear {
+    color: #ef5da8;
+}

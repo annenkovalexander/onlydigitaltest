@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: clamp(3.6875rem, 2.5982rem + 5.4464vw, 7.5rem);
+    gap: clamp(0.625rem, 0.4464rem + 0.8929vw, 1.25rem);
+}
+
+.periodText {
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #42567a;
+}
+
+
+.buttonsContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.button {
+    width: clamp(1.5625rem, 1.1161rem + 2.2321vw, 3.125rem);
+    height: clamp(1.5625rem, 1.1161rem + 2.2321vw, 3.125rem);
+    border-radius: calc(clamp(1.5625rem, 1.1161rem + 2.2321vw, 3.125rem) / 2);
+    border: 1px solid #42567a;
+    background-color: #fff;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.leftButton {
+    background-image: url('./Vector_left.svg');
+    background-size: 8px 15px;
+}
+
+.rightButton {
+    background-image: url('./Vector_right.svg');
+    background-size: 8px 15px;
+}
+
+
+.buttonDisabled {
+    opacity: 50%;
+}

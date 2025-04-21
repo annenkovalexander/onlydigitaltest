@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+    text-overflow: hidden;
+    overflow-y: scroll;
+}
+
+.year {
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: clamp(1rem, 0.8393rem + 0.8036vw, 1.5625rem);
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #3877ee;
+}
+
+.description {
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: clamp(0.875rem, 0.7679rem + 0.5357vw, 1.25rem);;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: #42567a;
+    max-width: 400px;
+    height: clamp(5rem, 4.8214rem + 0.8929vw, 5.625rem);
+}

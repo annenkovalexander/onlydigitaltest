@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 96px;
+    height: 100vh;
+    min-height: 568px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 40px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-left: 1px solid #42567a;
+    border-right: 1px solid #42567a;
+}
