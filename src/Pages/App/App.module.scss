@@ -2,15 +2,35 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 96px;
+    flex-grow: 1;
+    position: relative;
     height: 100vh;
+    width: 100%;
     min-height: 568px;
     max-width: 1440px;
     margin: 0 auto;
-    padding-left: 80px;
-    padding-right: 40px;
     overflow-x: hidden;
     overflow-y: scroll;
-    border-left: 1px solid #42567a;
-    border-right: 1px solid #42567a;
+    border-left: 1px solid rgba(66, 86, 122, .5);
+    border-right: 1px solid rgba(66, 86, 122, .5);
+}
+
+.eventsContainer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 56px;
+    height: 100%;
+    margin-top: auto;
+}
+
+.sliderLayoutMobile {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin-bottom: 13px;
+}
+
+.sliderLayoutDesktop {
+    margin-bottom: 104px;
+    justify-content: flex-end;
 }

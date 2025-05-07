@@ -1,0 +1,73 @@
+.container {
+    z-index: 5;
+}
+
+.dotContainer {
+    display: flex;
+    position: absolute;
+    visibility: hidden;
+    width: 10px;
+    height: 10px;
+    z-index: 5;
+}
+
+.container:not(.dotContainer.circleContainerVisible) + .container .dotContainer {
+    visibility: visible;
+}
+
+.container:not(.dotContainer.circleContainerVisible) + .container:hover .dotContainer {
+    visibility: hidden;
+}
+
+.container:hover {
+    cursor: pointer;
+}
+
+.container:hover .dotContainer {
+    visibility: hidden;
+}
+
+
+.circleContainer {
+    visibility: hidden;
+    position: absolute;
+    top: -23px;
+    left: -23px;
+}
+
+.container:hover .circleContainer {
+    visibility: visible;
+}
+
+.circleContainerVisible {
+    visibility: visible;
+}
+
+.periodNumber {
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    position: absolute;
+    top: 13px;
+    left: 21px;
+}
+
+.periodText {
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    position: absolute;
+    top: 13px;
+    left: calc(28px * 2 + 20px);
+    visibility: hidden;
+}
+
+.container:hover .periodText {
+    visibility: visible;
+}
+
+.circleContainerVisible .periodText {
+    visibility: visible;
+}
